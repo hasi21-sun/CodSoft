@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  animation: fadeInBody 1.5s ease forwards;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #0077ff;
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  color: #0077ff;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about img {
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077ff;
+  animation: rotateIn 1s ease forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-200deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+  color: #0077ff;
+}
+
+#skills {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+  color: #0077ff;
+}
+
+#skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#skills li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  animation: fadeInLeft 0.8s ease forwards;
+  opacity: 0;
+}
+
+#skills li:nth-child(1) { animation-delay: 1.2s; }
+#skills li:nth-child(2) { animation-delay: 1.4s; }
+#skills li:nth-child(3) { animation-delay: 1.6s; }
+#skills li:nth-child(4) { animation-delay: 1.8s; }
+#skills li:nth-child(5) { animation-delay: 2s; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#projects {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 2.2s;
+  opacity: 0;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+  color: #0077ff;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: 0;
+  animation: zoomIn 0.8s ease forwards;
+}
+
+.project:nth-child(2) {
+  animation-delay: 2.4s;
+}
+
+.project:nth-child(3) {
+  animation-delay: 2.6s;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+#resume {
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+#resume h2 {
+  margin-bottom: 20px;
+  color: #0077ff;
+}
+
+#resume a {
+  background-color: #0077ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#resume a:hover {
+  background-color: #005fcc;
+}
+
+#contact {
+  padding: 40px 0;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  color: #0077ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 700px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    margin-bottom: 20px;
+  }
+}
