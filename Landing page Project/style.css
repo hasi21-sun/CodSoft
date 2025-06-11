@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+.top-bar {
+  background: #ef476f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.top-bar .top-btn {
+  background: white;
+  color: #ef476f;
+  padding: 5px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background: #ffb703;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.hero {
+  background: #ddd url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #ef476f;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #ef476f;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  padding: 40px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+}
+
+.about {
+  display: flex;
+  padding: 50px 20px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.services {
+  padding: 40px 20px;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
